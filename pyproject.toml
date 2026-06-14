@@ -1,0 +1,37 @@
+[project]
+name = "ai-telecom-customer-support-assistant"
+version = "0.1.0"
+description = "RAG-powered Telecom Customer Support Assistant using LangChain, ChromaDB, HuggingFace Embeddings, Groq Qwen3-32B, and Streamlit."
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "streamlit",
+
+    "langchain",
+    "langchain-core",
+    "langchain-community",
+    "langchain-groq",
+    "langchain-chroma",
+    "langchain-huggingface",
+
+    "chromadb",
+
+    "sentence-transformers",
+    "transformers",
+    "torch",
+
+    "pypdf",
+
+    "pandas",
+
+    "python-dotenv",
+
+    "huggingface-hub"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter",
+    "ipykernel"
+]
